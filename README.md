@@ -1,6 +1,9 @@
-[![GitHub license](https://img.shields.io/badge/license-Apache%20license%202.0-blue.svg)](https://github.com/skydive-project/skydive-ui/blob/master/LICENSE)
-[![Slack Invite](https://img.shields.io/badge/Slack:-%23skydive&hyphen;project%20invite-blue.svg?style=plastic&logo=slack)](https://slack.skydive.network)
-[![Slack Channel](https://img.shields.io/badge/Slack:-%23skydive&hyphen;project-blue.svg?style=plastic&logo=slack)](https://skydive-project.slack.com)
+# build
+Original skydive using npm module to store ui src. Here we describe how to build the output files.
+```
+docker run --rm -v ${PWD}:/src/skydive-ui -w /src/skydive-ui node:12  sh -c "npm install && npm run build"
+```
+The result will be at dist folder.
 
 # Next generation Skydive WebUI
 
